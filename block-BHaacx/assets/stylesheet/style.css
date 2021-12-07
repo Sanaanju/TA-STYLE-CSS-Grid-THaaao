@@ -1,0 +1,452 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.hero-text {
+  background-color: #f4e3d6;
+}
+
+.education, .card-1, .skill-card, .my-skills {
+  background-color: #ecaf4e;
+}
+
+.location, .experience, .visiting-card, .hello, .card-2 {
+  background-color: #fd683f;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, span {
+  color: #948a85;
+}
+
+p {
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+span {
+  display: block;
+  color: #fff;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 0.7rem;
+  font-weight: 100;
+}
+
+h3 {
+  font-size: 1.2rem;
+  color: white;
+  margin: 10px 0;
+  margin-top: 30px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 300px;
+}
+
+.hero-img {
+  font-size: 0;
+  grid-column: span 2;
+  grid-row: span 2;
+  justify-self: stretch;
+  position: relative;
+}
+.hero-img img {
+  width: 100%;
+  height: 600px;
+}
+.hero-img span {
+  font-size: large;
+  font-weight: 700;
+  position: absolute;
+  top: 20px;
+  left: 100px;
+  z-index: 99;
+  color: #262323;
+}
+
+.hero-text {
+  display: grid;
+  grid-auto-rows: auto;
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.hero-text grid span {
+  color: gray;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+.hero-text h1 {
+  font-size: 2rem;
+  font-weight: 100;
+  padding: 20px 0;
+}
+.hero-text h1 strong {
+  color: black;
+}
+.hero-text button {
+  padding: 7px 20px;
+  border: 2px solid black;
+  border-radius: 30px;
+  background-color: transparent;
+  margin-top: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.hero-text .active {
+  color: #ecaf4e;
+}
+.hero-text span {
+  text-transform: uppercase;
+}
+
+.hero-text-holder {
+  width: 90%;
+  margin: 0 auto;
+  color: gray;
+}
+
+.navbar {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  padding: 20px;
+  font-weight: 500;
+}
+
+.auctor {
+  grid-column: span 2;
+  align-self: center;
+}
+.auctor .auctor-holder {
+  width: 90%;
+  margin: 0 auto;
+}
+.auctor span {
+  color: #ecaf4e;
+}
+.auctor p {
+  margin-bottom: 15px;
+}
+
+.about-img img {
+  width: 100%;
+  height: 300px;
+}
+
+.my-skills {
+  display: grid;
+}
+.my-skills .skill-holder {
+  width: 80%;
+  margin: 0 auto;
+  align-self: center;
+}
+.my-skills .percentage-text {
+  display: flex;
+  justify-content: space-between;
+}
+.my-skills .cal-per {
+  display: flex;
+  justify-content: space-between;
+}
+.my-skills .design {
+  margin-bottom: 10px;
+}
+.my-skills .design .percentage {
+  width: 90%;
+  border-top: 3px solid black;
+}
+.my-skills .design .non-percentage {
+  width: 10%;
+  border-top: 3px solid white;
+}
+.my-skills .backend {
+  margin-bottom: 10px;
+}
+.my-skills .backend .percentage {
+  width: 70%;
+  border-top: 3px solid black;
+}
+.my-skills .backend .non-percentage {
+  width: 30%;
+  border-top: 3px solid white;
+}
+.my-skills .html .percentage {
+  width: 80%;
+  border-top: 3px solid black;
+}
+.my-skills .html .non-percentage {
+  width: 20%;
+  border-top: 3px solid white;
+}
+
+.skill-card {
+  display: grid;
+  text-align: center;
+  color: #fff;
+}
+.skill-card i {
+  font-size: 24px;
+}
+.skill-card p {
+  color: white;
+}
+.skill-card h3 {
+  font-size: 1.2rem;
+  color: white;
+  margin: 10px 0;
+  margin-top: 30px;
+}
+
+.card-container, .experience-holder, .visiting-card-holder, .hello-holder {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  align-self: center;
+}
+
+.card-3 {
+  background-color: black;
+}
+
+.card-4 {
+  background-color: #fff;
+}
+.card-4 i {
+  color: black;
+}
+.card-4 p {
+  color: black;
+}
+.card-4 h3 {
+  color: black;
+}
+
+.experience-img {
+  grid-column: span 2;
+}
+.experience-img img {
+  width: 100%;
+  height: 300px;
+}
+
+.experience, .visiting-card, .hello {
+  display: grid;
+  grid-column: span 2;
+}
+.experience h3, .visiting-card h3, .hello h3 {
+  display: inline;
+}
+.experience i, .visiting-card i, .hello i {
+  font-size: 25px;
+  color: #fff;
+}
+
+.experience-holder, .visiting-card-holder, .hello-holder {
+  width: 90%;
+  margin: 0 auto;
+}
+.experience-holder p, .visiting-card-holder p, .hello-holder p {
+  color: #fff;
+}
+.experience-holder h2, .visiting-card-holder h2, .hello-holder h2 {
+  color: #fff;
+}
+.experience-holder h2 p, .visiting-card-holder h2 p, .hello-holder h2 p {
+  font-weight: 100;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.h3-holder {
+  display: flex;
+  align-items: center;
+  height: 30px;
+}
+.h3-holder h3 {
+  color: #fff;
+}
+.h3-holder .date {
+  font-size: 14px;
+  color: black;
+  margin-left: 20px;
+}
+
+.experience-icon {
+  margin-right: 20px;
+}
+
+.education {
+  display: grid;
+  grid-column: span 2;
+}
+.education i {
+  font-size: 25px;
+  color: #fff;
+}
+
+.education-img {
+  grid-column: span 2;
+}
+.education-img img {
+  width: 100%;
+  height: 300px;
+}
+
+.hello {
+  grid-row: span 2;
+}
+.hello input {
+  border: none;
+  border-bottom: 1px solid #fff;
+  width: 100%;
+  background-color: transparent;
+  margin-bottom: 30px;
+}
+.hello textarea {
+  border: none;
+  border-bottom: 1px solid #fff;
+  width: 100%;
+  background-color: transparent;
+  margin-bottom: 10px;
+  margin-bottom: 30px;
+}
+.hello button {
+  padding: 5px 0;
+  width: 40%;
+  background-color: #fff;
+  color: black;
+  border-radius: 30px;
+  border: none;
+}
+
+.visiting-card {
+  background-color: black;
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.visiting-card-holder li {
+  margin-bottom: 30px;
+  color: white;
+}
+.visiting-card-holder .earth, .visiting-card-holder .email {
+  color: gold;
+}
+.visiting-card-holder i {
+  margin-right: 20px;
+}
+.visiting-card-holder span {
+  margin-bottom: 50px;
+}
+
+.location {
+  grid-column: span 4;
+  grid-row: span 1;
+}
+
+.location-holder {
+  width: 600px;
+  margin: 30px auto;
+  box-shadow: 0 0 16px #6c6c6c;
+}
+
+footer {
+  background-color: white;
+  grid-column: span 4;
+  grid-row: span 1;
+  display: grid;
+  place-content: center;
+}
+footer a {
+  color: gray;
+  margin-right: 20px;
+}
+footer span {
+  color: gray;
+  margin-bottom: 50px;
+  font-size: 16px;
+}
+footer small {
+  color: gold;
+}
+footer ul {
+  display: flex;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-img, .hero-text, .auctor, .experience-img, .experience, .visiting-card, .education, .education-img, .hello, .location, footer {
+    grid-column: span 1;
+  }
+}/*# sourceMappingURL=style.css.map */

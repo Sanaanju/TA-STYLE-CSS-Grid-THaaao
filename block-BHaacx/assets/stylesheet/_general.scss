@@ -1,0 +1,36 @@
+%BCclr-1{
+    background-color: rgb(244,227,214);
+}
+%BCclr-2{
+    background-color: rgb(236,175,78);
+}
+%BCclr-3{
+    background-color: rgb(253,104,63);
+}
+
+h1,h2,h3,h4,h5,h6,p,a,span{
+    color: rgb(148,138,133);
+}
+p{
+    line-height: 1.5;
+}
+a{
+    text-decoration: none;
+}
+h2{
+    font-size: 1.8rem;
+}
+span{
+    display: block;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 0.7rem;
+    font-weight: 100;
+}
+h3{
+    font-size: 1.2rem ;
+    color: white;
+    margin: 10px 0;
+    margin-top: 30px;
+}
